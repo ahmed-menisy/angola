@@ -183,6 +183,31 @@ header nav a:not(.active):hover {
    transform: translate(-50%, -50%);
    color: #fff;
 }
+
+.landing-slid .carousel-item::after {
+   content: attr(data-text);
+   position: absolute;
+   z-index: 1000;
+   top: 50%;
+   left: 120%;
+   width: 40%;
+   transform: translate(-50% , -50%);
+   text-align: center;
+   font-size: 3.5rem;
+   font-weight: bolder;
+   color: white;
+}
+.landing-slid .carousel-item.active::after {
+   animation:identifier 0.5s forwards linear alternate;
+}
+@keyframes identifier {
+   0%{
+      left: 100%;
+   }
+   100% {
+      left: 50%;
+   }
+}
 /* --------- End Header ----------*/
 /* --------- Start About ----------*/
 .about .progress-bar::after {
