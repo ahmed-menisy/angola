@@ -189,7 +189,7 @@ header nav a:not(.active):hover {
    color: white;
 }
 .landing-slid .carousel-item.active::after {
-   animation:identifier 0.5s forwards linear infinite;
+   animation:identifier 0.5s forwards linear ;
 }
 @keyframes identifier {
    0%{
