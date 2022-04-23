@@ -245,21 +245,56 @@ header nav a:not(.active):hover {
 }
 /* --------- End Service ----------*/
 /* --------- Start reviews ----------*/
-.reviews .carousel-indicators {
-   width: 48%;
-   margin: auto;
-   overflow: hidden;
-   height: 150px;
-}
 :is(.reviews) :is(.carousel-indicators) :is(button, img) {
-   width: 100px;
-   height: 100px;
+   width: 90px;
+   height: 90px;
    border-radius: 50%;
    text-indent: 0;
    transition: transform 0.3s;
 }
 .reviews .carousel-indicators button.active {
-   transform: scale(1.5);
+   transform: scale(1.4);
+   position: relative;
+}
+:is(.reviews) :is(.carousel-indicators) button.active::before,
+button.active::after {
+   position: absolute;
+   width: 120px;
+   left: 50%;
+   transform: translateX(-50%);
+}
+.reviews .carousel-indicators button.active::before {
+   content: attr(data-user-title);
+   top: 100%;
+   font-size: 0.8rem;
+   color: #444;
+   font-weight: 600;
+}
+.reviews .carousel-indicators button.active::after {
+   content: attr(data-user-sub);
+   top: 120%;
+   font-size: 0.6rem;
+   color: #999;
+}
+.reviews .carousel-indicators button.active .text-hidd {
+   display: block !important;
+}
+.reviews .carousel-indicators button.active .text-hidd h3 {
+   padding: 10px 0 0;
+   font-size: 0.9rem;
+}
+:is(.reviews) :is(.carousel-inner) :is(.carousel-item) p::before,
+p::after {
+   font-family: "Font Awesome 6 Free";
+   font-weight: 900;
+   font-size: 1.4rem;
+   padding: 5px;
+}
+.reviews .carousel-inner .carousel-item p::before {
+   content: "\f10d";
+}
+.reviews .carousel-inner .carousel-item p::after {
+   content: "\f10e";
 }
 /* --------- End reviews ----------*/
 /* --------- Start Contact ----------*/

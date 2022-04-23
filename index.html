@@ -18,6 +18,7 @@
    </head>
    <body>
       <!-- ============== Start Fixed items ============== -->
+      <!-- button for slider -->
       <div class="btngroup-fixed">
          <button
             class="next border"
@@ -48,7 +49,10 @@
       <div
          class="fixed-animation position-absolute start-50 translate-middle-x"
       >
-         <a href="#" class="round rounded-pill d-flex justify-content-center">
+         <a
+            href="#about"
+            class="round rounded-pill d-flex justify-content-center"
+         >
             <span class="circle position-relative"></span>
          </a>
       </div>
@@ -78,27 +82,30 @@
                >
                   <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"
+                        <a
+                           class="nav-link active"
+                           aria-current="page"
+                           href="#home"
                            >Home</a
                         >
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#about">About</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="#">Team</a>
+                        <a class="nav-link" href="#team">Team</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
+                        <a class="nav-link" href="#project">Projects</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="#services">Services</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" href="#blog">Blog</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                      </li>
                   </ul>
                   <div class="social d-lg-flex ms-5 d-none">
@@ -115,7 +122,7 @@
                </div>
             </div>
          </nav>
-         <div class="landing-slid position-relative">
+         <div id="home" class="landing-slid position-relative">
             <!-- slid 1-->
             <div
                id="carouselExampleFade"
@@ -158,7 +165,7 @@
       <!-- ============== Start main ============== -->
       <main class="overflow-hidden">
          <!-- ============== Start About ============== -->
-         <section class="about py-5">
+         <section id="about" class="about py-5">
             <div class="container-md py-5">
                <div class="main-title text-center mb-5">
                   <div class="title position-relative">
@@ -248,7 +255,7 @@
          </section>
          <!-- ============== End About ============== -->
          <!-- ============== Start Team ============== -->
-         <section class="team py-5">
+         <section id="team" class="team py-5">
             <div class="container-md py-5">
                <div class="main-title text-center mb-5">
                   <div class="title position-relative">
@@ -422,7 +429,7 @@
          </section>
          <!-- ============== End Team ============== -->
          <!-- ============== Start Service ============== -->
-         <section class="services py-5">
+         <section id="services" class="services py-5">
             <div class="container-md py-5">
                <div class="main-title text-center mb-5">
                   <div class="title position-relative">
@@ -593,8 +600,8 @@
                </div>
                <div
                   id="carouselExampleIndicators"
-                  class="carousel slide carousel-fade"
-                  data-bs-ride="carousel"
+                  class="carousel slide carousel-fade user-select-none"
+                  data-bs-ride="flase"
                >
                   <div
                      class="carousel-indicators position-static mb-5 align-items-center"
@@ -603,9 +610,10 @@
                         type="button"
                         data-bs-target="#carouselExampleIndicators"
                         data-bs-slide-to="0"
-                        class="active"
                         aria-current="true"
                         aria-label="Slide 1"
+                        data-user-title="Martin Jack"
+                        data-user-sub="From Hooli"
                      >
                         <img src="images/client-1.png" alt="client" />
                      </button>
@@ -614,6 +622,8 @@
                         data-bs-target="#carouselExampleIndicators"
                         data-bs-slide-to="1"
                         aria-label="Slide 2"
+                        data-user-title="Hugh Tace"
+                        data-user-sub="From Capital"
                      >
                         <img src="images/client-2.png" alt="client" />
                      </button>
@@ -622,6 +632,8 @@
                         data-bs-target="#carouselExampleIndicators"
                         data-bs-slide-to="2"
                         aria-label="Slide 3"
+                        data-user-title="Shane Catson"
+                        data-user-sub="From Massive"
                      >
                         <img src="images/client-3.png" alt="client" />
                      </button>
@@ -630,6 +642,8 @@
                         data-bs-target="#carouselExampleIndicators"
                         data-bs-slide-to="3"
                         aria-label="Slide 4"
+                        data-user-title="Jonathon Doe"
+                        data-user-sub="From Umbrella"
                      >
                         <img src="images/client-4.png" alt="client" />
                      </button>
@@ -638,6 +652,9 @@
                         data-bs-target="#carouselExampleIndicators"
                         data-bs-slide-to="4"
                         aria-label="Slide 5"
+                        class="active"
+                        data-user-title="Jane Doris"
+                        data-user-sub="From Acme"
                      >
                         <img src="images/client-5.png" alt="client" />
                      </button>
@@ -646,6 +663,8 @@
                         data-bs-target="#carouselExampleIndicators"
                         data-bs-slide-to="5"
                         aria-label="Slide 6"
+                        data-user-title="Anthony Lee"
+                        data-user-sub="From Initech"
                      >
                         <img src="images/client-6.png" alt="client" />
                      </button>
@@ -654,6 +673,8 @@
                         data-bs-target="#carouselExampleIndicators"
                         data-bs-slide-to="6"
                         aria-label="Slide 7"
+                        data-user-title="Doglas Kosta"
+                        data-user-sub="From Soylent"
                      >
                         <img src="images/client-7.png" alt="client" />
                      </button>
@@ -662,6 +683,8 @@
                         data-bs-target="#carouselExampleIndicators"
                         data-bs-slide-to="7"
                         aria-label="Slide 8"
+                        data-user-title="David Dowsy"
+                        data-user-sub="From Globex"
                      >
                         <img src="images/client-8.png" alt="client" />
                      </button>
@@ -670,11 +693,15 @@
                         data-bs-target="#carouselExampleIndicators"
                         data-bs-slide-to="8"
                         aria-label="Slide 9"
+                        data-user-title="Martin Jack"
+                        data-user-sub="From Hooli"
                      >
                         <img src="images/client-9.png" alt="client" />
                      </button>
                   </div>
-                  <div class="carousel-inner w-50 mx-auto">
+                  <div
+                     class="carousel-inner w-50 mx-auto text-center text-muted pt-5 fs-5"
+                  >
                      <div class="carousel-item active">
                         <p>
                            Aenean sit amet est orci. Aenean at nisi eget nulla
@@ -744,7 +771,7 @@
          </section>
          <!-- ============== End Client Reviews ============== -->
          <!-- ============== Start Contact ============== -->
-         <section class="contact py-5">
+         <section id="contact" class="contact py-5">
             <div class="container py-5">
                <div class="main-title text-center mb-5">
                   <div class="title position-relative">
