@@ -182,17 +182,20 @@ header nav a:not(.active):hover {
    top: 50%;
    left: 120%;
    width: 41%;
-   transform: translate(-50% , -50%);
+   transform: translate(-50%, -50%);
    text-align: center;
    font-size: 3.5rem;
    font-weight: bolder;
    color: white;
 }
 .landing-slid .carousel-item.active::after {
-   animation:identifier 0.5s forwards linear ;
+   animation-name: identifier;
+   animation-duration: 0.3s;
+   animation-timing-function: linear;
+   animation-fill-mode: forwards;
 }
 @keyframes identifier {
-   0%{
+   0% {
       left: 100%;
    }
    100% {
