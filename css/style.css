@@ -19,6 +19,9 @@
    font-size: 0.9rem;
 }
 @media (max-width: 767px) {
+   :root {
+      font-size: 0.69rem;
+   }
    .fs-big {
       font-size: 1.6rem;
    }
@@ -172,25 +175,13 @@ header nav a:not(.active):hover {
    background-image: url(../images/slideshow-3.jpg);
    background-size: cover;
 }
-.landing-slid .slider-2 {
-   inset: 0;
-   z-index: 5;
-}
-.landing-slid .slider-2 .carousel-inner .carousel-item h2 {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   color: #fff;
-}
-
 .landing-slid .carousel-item::after {
    content: attr(data-text);
    position: absolute;
    z-index: 1000;
    top: 50%;
    left: 120%;
-   width: 40%;
+   width: 41%;
    transform: translate(-50% , -50%);
    text-align: center;
    font-size: 3.5rem;
